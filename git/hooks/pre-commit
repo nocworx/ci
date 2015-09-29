@@ -3,7 +3,4 @@
 
 require __DIR__ . '/../../vendor/autoload.php';
 
-\NocWorx\Lib\Env::set( 'PROJECT_ROOT', realpath( __DIR__ . '/../../' ) );
-\NocWorx\Lib\Env::set( 'PROJECT_NAME', basename( __DIR__ . '/../../' ) );
-
 (new \NocWorx\Lib\GitHooks())->preCommit();
