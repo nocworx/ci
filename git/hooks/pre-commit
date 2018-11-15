@@ -3,4 +3,7 @@
 
 require __DIR__ . '/../../vendor/autoload.php';
 
+// include this if exists
+@include __DIR__ . '/../../boot.php';
+
 (new \NocWorx\Lib\GitHooks())->preCommit();
